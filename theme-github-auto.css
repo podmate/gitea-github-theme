@@ -372,6 +372,33 @@
   .ui.ui.ui.grey.label {
     line-height: 10px;
   }
+
+  /* yes/no dialog buttons for repo archival */
+  .ui.basic.inverted.buttons .button,
+  .ui.basic.inverted.button {
+    color: #f9fafb !important;
+  }
+
+  // border color of SSH/https cloning buttons (non-focused)
+  .ui.basic.blue.button,
+  .ui.basic.blue.buttons .button,
+  .ui.basic.primary.button,
+  .ui.basic.primary.buttons .button {
+    box-shadow: inset 0 0 0 1px transparent !important;
+  }
+
+  // same for hover
+  ui.basic.blue.button:hover,
+  .ui.basic.blue.buttons .button:hover,
+  .ui.basic.primary.button:hover,
+  .ui.basic.primary.buttons .button:hover {
+    box-shadow: inset 0 0 0 0px transparent !important;
+  }
+  // background color of branch name in PRs
+  .issue.list .branches .branch {
+    background-color: #afb8c133;
+    border-radius: 6px;
+  }
 }
 @media (prefers-color-scheme: dark) {
   :root {
